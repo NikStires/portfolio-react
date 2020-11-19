@@ -1,0 +1,69 @@
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+.social-list {
+  list-style: none;
+}
+
+.social-links {
+  border-radius: 10px;
+  position: fixed;
+  left: 2%;
+  top: 25%;
+  font-size: 14px;
+  text-align: center;
+
+  a {
+    width: 25px;
+    height: 25px;
+    line-height: 5px !important;
+    position: relative;
+    margin: 10px 10px;
+    display: inline-block;
+    color: #111;
+
+    -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+    -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+    -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+    -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  }
+}
+.social-links a i,
+.social-links a span {
+  color: #19d3da;
+  position: relative;
+  top: 6px;
+  left: 1px;
+}
+.social-links a:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #19d3da;
+
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.social-links a:hover {
+  color: #19d3da;
+}
+.social-links a:hover:before {
+  background: #111;
+}

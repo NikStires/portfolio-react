@@ -1,0 +1,121 @@
+.about-container {
+  width: 80%;
+  height: 90vh;
+  padding-top: 10vh;
+  margin: auto;
+
+  .introduction {
+    h3 {
+      font-size: 1rem;
+      color: #19d3da;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #eeeeee;
+    }
+  }
+  .about-area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .text-and-button {
+      width: 50%;
+      p {
+        color: #eeeeee;
+        font-size: 1.5rem;
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          color: #19d3da;
+
+          &:visited {
+            color: #19d3da;
+          }
+        }
+      }
+      .contact-btn {
+        width: 100%;
+        padding-top: 10px;
+        button {
+          cursor: pointer;
+          color: #19d3da;
+          padding: 20px;
+          text-decoration: none;
+          border: 2px solid #19d3da;
+          background: transparent;
+          font-size: 1rem;
+
+          &:hover {
+            background: #19d3da;
+            color: #373a40;
+          }
+
+          a {
+            text-decoration: none;
+            color: #19d3da;
+            &:visited {
+              color: #19d3da;
+            }
+          }
+        }
+      }
+    }
+    img {
+      width: 35%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .skills {
+    display: flex;
+    svg {
+      width: 7%;
+    }
+  }
+
+  hr {
+    width: 50%;
+    border: 2px solid #19d3da;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .about-container {
+    width: 70%;
+  }
+  .about-area {
+    padding-top: 0 !important;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    .text-and-button {
+      width: 100% !important;
+      p {
+        padding-top: 10px;
+        font-size: 1rem !important;
+      }
+    }
+    img {
+      width: 100% !important;
+      height: auto;
+    }
+  }
+
+  .contact-btn {
+    margin-top: 5vh !important;
+    button {
+      padding: 5px !important;
+    }
+  }
+
+  .skills {
+    display: none !important;
+  }
+  hr {
+    display: none;
+  }
+}

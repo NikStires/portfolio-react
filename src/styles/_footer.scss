@@ -1,0 +1,36 @@
+.footer-container {
+  width: 70%;
+  margin: auto;
+  padding-top: 10vh;
+  bottom: 0;
+  font-size: 1.2rem;
+
+  .footer-content {
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    p {
+      color: white;
+
+      a {
+        color: #19d3da;
+        text-decoration: none;
+        cursor: pointer;
+        &:visited {
+          color: #19d3da;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .footer-container {
+    padding-top: 5px;
+  }
+  .footer-content {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

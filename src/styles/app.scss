@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #373a40;
+}
+
+@import './nav';
+@import './about';
+@import './project';
+@import './art-gallery';
+@import './socials';
+@import './footer';

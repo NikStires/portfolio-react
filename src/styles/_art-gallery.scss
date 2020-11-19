@@ -1,0 +1,26 @@
+.art-container {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+
+  .artPiece {
+    display: block;
+    flex: 1;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+      transition: transform 0.2s;
+      padding: 5px 5px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .art-container {
+    flex-direction: column;
+    width: 70%;
+  }
+}
