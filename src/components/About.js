@@ -21,7 +21,11 @@ const About = () => {
         <div className='text-and-button'>
           <p>
             I am a junior fullstack developer in my 3rd year at
-            <a target='_blank' href='https://www.seattleu.edu/'>
+            <a
+              target='_blank'
+              href='https://www.seattleu.edu/'
+              rel='noreferrer'
+            >
               {' '}
               Seattle University
             </a>
