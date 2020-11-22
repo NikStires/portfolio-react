@@ -7,7 +7,7 @@ import projectData from '../data/ProjectData';
 
 const Projects = () => {
   //State
-  const [projects, setProjects] = useState(projectData());
+  const [projects] = useState(projectData());
 
   return (
     <div id='projects' className='projects'>
@@ -20,6 +20,12 @@ const Projects = () => {
               image={project.image}
               text={project.text}
               technologies={project.technologies}
+              hasGithub={project.hasGithub}
+              github={project.github}
+              hasLink={project.hasLink}
+              link={project.link}
+              id={project.id}
+              key={project.id}
             />
           );
         } else {
@@ -29,6 +35,12 @@ const Projects = () => {
               image={project.image}
               text={project.text}
               technologies={project.technologies}
+              hasGithub={project.hasGithub}
+              github={project.github}
+              hasLink={project.hasLink}
+              link={project.link}
+              id={project.id}
+              key={project.id}
             />
           );
         }

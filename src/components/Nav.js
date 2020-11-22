@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+//icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrow, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import resume from './resume.pdf';
+//animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

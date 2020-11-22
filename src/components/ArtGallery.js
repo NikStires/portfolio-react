@@ -1,21 +1,21 @@
 import React from 'react';
 import ArtPiece from './ArtPiece';
 //Images
-import Bridge from '../img/art/bridge.jpg';
-import Drawing1 from '../img/art/drawing1.jpg';
-import Drawing2 from '../img/art/drawing2.jpg';
-import Drawing3 from '../img/art/drawing3.jpg';
-import Drawing4 from '../img/art/drawing4.jpg';
-import Drawing5 from '../img/art/drawing5.jpg';
-import Drawing6 from '../img/art/drawing6.jpg';
-import Drawing7 from '../img/art/drawing7.jpg';
-import Drawing8 from '../img/art/drawing8.jpg';
-import Drawing9 from '../img/art/drawing9.jpg';
-import Drawing10 from '../img/art/drawing10.jpg';
-import Drawing11 from '../img/art/drawing11.jpg';
-import Drawing12 from '../img/art/drawing12.jpg';
-import Monkey from '../img/art/monkey.jpg';
-import Rainbow from '../img/art/rainbow.jpg';
+import Bridge from '../img/art/bridge.webp';
+import Drawing1 from '../img/art/drawing1.webp';
+import Drawing2 from '../img/art/drawing2.webp';
+import Drawing3 from '../img/art/drawing3.webp';
+import Drawing4 from '../img/art/drawing4.webp';
+import Drawing5 from '../img/art/drawing5.webp';
+import Drawing6 from '../img/art/drawing6.webp';
+import Drawing7 from '../img/art/drawing7.webp';
+import Drawing8 from '../img/art/drawing8.webp';
+import Drawing9 from '../img/art/drawing9.webp';
+import Drawing10 from '../img/art/drawing10.webp';
+import Drawing11 from '../img/art/drawing11.webp';
+import Drawing12 from '../img/art/drawing12.webp';
+import Monkey from '../img/art/monkey.webp';
+import Rainbow from '../img/art/rainbow.webp';
 
 const ArtGallery = () => {
   return (

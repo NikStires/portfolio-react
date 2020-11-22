@@ -1,5 +1,6 @@
 import React from 'react';
-import headshot from '../img/head.jpeg';
+import headshot from '../img/head.webp';
+//animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -34,16 +35,14 @@ const About = () => {
             would like to work together.
           </p>
           <div className='contact-btn'>
-            <button>
-              <a
-                href='mailto:nik.stires@gmail.com'
-                title='Email'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Get In Touch
-              </a>
-            </button>
+            <a
+              href='mailto:nik.stires@gmail.com'
+              title='Email'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <button>Get In Touch</button>
+            </a>
           </div>
         </div>
         <img src={headshot} alt='Nik Stires' />
