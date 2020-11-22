@@ -30,13 +30,13 @@ const About = () => {
               Seattle University
             </a>
             . I have been programming since I was 14 years old and I love,
-            almost, every second of it. Despite my college education my favoirte
-            way to learn is to hop in start reading the documentation and get
-            hands on experience quickly. In my free time I love to learn new
-            technologies to expand my skillset. I am actively looking to join a
-            team of developers to work with and learn from. Please take a look
-            at my <a href='#projects'>work</a> and shoot me an email if you
-            would like to work together.
+            almost, every second of it. Despite my college education, my
+            favoirte way to learn is to hop in, start reading the documentation,
+            and get hands on experience quickly. In my free time, I love to
+            learn new technologies to expand my skillset. I am actively looking
+            to join a team of developers to work with and learn from. Please
+            take a look at my <a href='#projects'>work</a> and shoot me an email
+            if you would like to work together.
           </p>
           <div className='contact-btn'>
             <a
