@@ -20,7 +20,7 @@ const About = () => {
       <div className='about-area'>
         <div className='text-and-button'>
           <p>
-            I am a junior fullstack developer in my 3rd year at
+            I am a fullstack developer in my 3rd year at
             <a
               target='_blank'
               href='https://www.seattleu.edu/'
