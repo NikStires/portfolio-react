@@ -6,9 +6,11 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  padding: 10px;
   padding-bottom: 10vh;
   width: 80%;
   height: 50vh;
+  box-shadow: 2px 2px 50px rgb(51, 51, 51);
   img {
     width: 45%;
     height: auto;

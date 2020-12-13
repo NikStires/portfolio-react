@@ -9,25 +9,13 @@ import { v4 as uuidv4 } from 'uuid';
 function projectData() {
   return [
     {
-      name: 'Recipe Search Engine',
-      image: RecipeSearchEngine,
+      name: 'Waves Music Player',
+      image: Waves,
       text:
-        'Not sure to cook with what you have in your fridge? Look up an ingredient and see what you can make with it!',
-      technologies: ['React.js', 'Edmame API', 'Sass'],
+        'A lightweight, responsive and scalable lofi-hiphop streaming website.',
+      technologies: ['React.js', 'Sass'],
       hasGithub: true,
-      github: 'https://github.com/NikStires/RecipeSearchEngine',
-      hasLink: false,
-      link: '',
-      id: uuidv4(),
-    },
-    {
-      name: 'Stay Stoked',
-      image: StayStoked,
-      text:
-        'Keep the fire burning to ward away evil spirits in this game jam submission for Ludem Dare 46, created in 48 hours.',
-      technologies: ['C#', 'Unity', 'Aesprite'],
-      hasGithub: true,
-      github: 'https://github.com/NikStires/StayStoked',
+      github: 'https://github.com/NikStires/Waves',
       hasLink: false,
       link: '',
       id: uuidv4(),
@@ -45,13 +33,25 @@ function projectData() {
       id: uuidv4(),
     },
     {
-      name: 'Waves Music Player',
-      image: Waves,
+      name: 'Stay Stoked',
+      image: StayStoked,
       text:
-        'A lightweight, responsive and scalable lofi-hiphop streaming website.',
-      technologies: ['React.js', 'Sass'],
+        'Keep the fire burning to ward away evil spirits in this game jam submission for Ludem Dare 46, created in 48 hours.',
+      technologies: ['C#', 'Unity', 'Aesprite'],
       hasGithub: true,
-      github: 'https://github.com/NikStires/Waves',
+      github: 'https://github.com/NikStires/StayStoked',
+      hasLink: false,
+      link: '',
+      id: uuidv4(),
+    },
+    {
+      name: 'Recipe Search Engine',
+      image: RecipeSearchEngine,
+      text:
+        'Not sure to cook with what you have in your fridge? Look up an ingredient and see what you can make with it!',
+      technologies: ['React.js', 'Edmame API', 'Sass'],
+      hasGithub: true,
+      github: 'https://github.com/NikStires/RecipeSearchEngine',
       hasLink: false,
       link: '',
       id: uuidv4(),
