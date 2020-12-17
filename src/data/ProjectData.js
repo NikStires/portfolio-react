@@ -3,6 +3,7 @@ import RecipeSearchEngine from '../img/project-img/recipe-search-engine.WebP';
 import StayStoked from '../img/project-img/stayStoked.WebP';
 import SmartPizza from '../img/project-img/smartpizza.WebP';
 import Waves from '../img/project-img/waves.WebP';
+import Capture from '../img/project-img/capture.WebP';
 //uuidv4
 import { v4 as uuidv4 } from 'uuid';
 
@@ -13,7 +14,7 @@ function projectData() {
       image: Waves,
       text:
         'A lightweight, responsive and scalable lofi-hiphop streaming website.',
-      technologies: ['React.js', 'Sass'],
+      technologies: ['React', 'Sass'],
       hasGithub: true,
       github: 'https://github.com/NikStires/Waves',
       hasLink: false,
@@ -33,6 +34,17 @@ function projectData() {
       id: uuidv4(),
     },
     {
+      name: 'Capture',
+      image: Capture,
+      text: 'A multipage fully animated mock cinematography portfolio website.',
+      technologies: ['React Styled Components', 'Framer Motion'],
+      hasGithub: true,
+      github: 'https://github.com/NikStires/capture',
+      hasLink: false,
+      link: null,
+      id: uuidv4(),
+    },
+    {
       name: 'Stay Stoked',
       image: StayStoked,
       text:
@@ -49,7 +61,7 @@ function projectData() {
       image: RecipeSearchEngine,
       text:
         'Not sure to cook with what you have in your fridge? Look up an ingredient and see what you can make with it!',
-      technologies: ['React.js', 'Edmame API', 'Sass'],
+      technologies: ['React', 'Edmame-API', 'Sass'],
       hasGithub: true,
       github: 'https://github.com/NikStires/RecipeSearchEngine',
       hasLink: false,

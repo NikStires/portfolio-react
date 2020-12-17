@@ -14,6 +14,7 @@ import Drawing9 from '../img/art/drawing9.webp';
 import Drawing10 from '../img/art/drawing10.webp';
 import Drawing11 from '../img/art/drawing11.webp';
 import Drawing12 from '../img/art/drawing12.webp';
+import Drawing13 from '../img/art/drawing13.webp';
 import Monkey from '../img/art/monkey.webp';
 import Rainbow from '../img/art/rainbow.webp';
 
@@ -37,6 +38,7 @@ const ArtGallery = () => {
         <ArtPiece image={Drawing7} />
         <ArtPiece image={Monkey} />
         <ArtPiece image={Bridge} />
+        <ArtPiece image={Drawing13} />
       </div>
       <div className='col'>
         <ArtPiece image={Drawing8} />
