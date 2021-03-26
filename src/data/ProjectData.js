@@ -4,11 +4,24 @@ import StayStoked from '../img/project-img/stayStoked.WebP';
 import SmartPizza from '../img/project-img/smartpizza.WebP';
 import Waves from '../img/project-img/waves.WebP';
 import Capture from '../img/project-img/capture.WebP';
+import Climate from '../img/project-img/global-climate.WebP';
 //uuidv4
 import { v4 as uuidv4 } from 'uuid';
 
 function projectData() {
   return [
+    {
+      name: 'Global Climate Advocacy',
+      image: Climate,
+      text:
+        'An informational website about current climate conditions on Earth.',
+      technologies: ['React', 'React Styled Components'],
+      hasGithub: true,
+      github: 'https://github.com/NikStires/climate-advocacy-project',
+      hasLink: true,
+      link: 'https://global-climate.info/',
+      id: uuidv4(),
+    },
     {
       name: 'Waves Music Player',
       image: Waves,
