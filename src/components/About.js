@@ -20,7 +20,7 @@ const About = () => {
       <div className='about-area'>
         <div className='text-and-button'>
           <p>
-            I am a fullstack developer in my 3rd year at
+            I am a fullstack developer in my final year at
             <a
               target='_blank'
               href='https://www.seattleu.edu/'
@@ -30,13 +30,13 @@ const About = () => {
               Seattle University
             </a>
             . I have been programming since I was 14 years old and I love,
-            almost, every second of it. Despite my college education, my
-            favoirte way to learn is to hop in, start reading the documentation,
-            and get hands on experience quickly. In my free time, I love to
-            create art and learn new technologies to expand my skillset. I am
-            actively looking to join a team of developers to work with and learn
-            from. Please take a look at my <a href='#projects'>projects</a> and
-            shoot me an email if you would like to work together.
+            almost, every second of it. Despite my college education my favorite
+            way to learn is to hop in, start reading the documentation, and get
+            hands on experience quickly. In my free time, I love to create art
+            and learn new technologies to expand my skillset. I am actively
+            looking to join a team of developers to work with and learn from.
+            Please take a look at my <a href='#projects'>projects</a> and shoot
+            me an email if you would like to work together.
           </p>
           <div className='contact-btn'>
             <a
