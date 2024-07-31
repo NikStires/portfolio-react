@@ -20,7 +20,7 @@ const About = () => {
       <div className='about-area'>
         <div className='text-and-button'>
           <p>
-            I am a fullstack developer in my final year at
+            I am a full-stack software engineer with a bachelor’s degree in computer science from
             <a
               target='_blank'
               href='https://www.seattleu.edu/'
@@ -29,14 +29,8 @@ const About = () => {
               {' '}
               Seattle University
             </a>
-            . I have been programming since I was 14 years old and I love,
-            almost, every second of it. Despite my college education my favorite
-            way to learn is to hop in, start reading the documentation, and get
-            hands on experience quickly. In my free time, I love to create art
-            and learn new technologies to expand my skillset. I am actively
-            looking to join a team of developers to work with and learn from.
-            Please take a look at my <a href='#projects'>projects</a> and shoot
-            me an email if you would like to work together.
+            . My most recent work and passion has been for XR development and machine learning. I believe the combination of these two mediums will fundamentally change the way we work and play over the next decade. My programming journey started at the age of 14 when I attended a web design class in highschool. This natural progression led me to learn javascript and to leverage frameworks such as React throughout my highschool years to make websites for local businesses and family friends. When the time came for me to go to college I was sure I wanted to study computer science. In college I learned that there is so much more to programming than web development. I took courses in programming fundamentals where I learned programming languages such as C and C++. I studied systems architecture, algorithms, data structures, databases  and more. As I continued my journey and started my first internship I used many higher level programming languages such as C#, Python and Swift to build user interfaces and train machine learning algorithms. I am a lifelong learner dedicated to keeping up to date on trends and tools that will help me reach my goals.
+
           </p>
           <div className='contact-btn'>
             <a
