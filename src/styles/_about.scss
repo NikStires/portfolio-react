@@ -1,7 +1,8 @@
 .about-container {
   width: 80%;
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 10vh;
+  padding-bottom: 0;
   margin: auto;
 
   .introduction {
@@ -22,20 +23,59 @@
     .text-and-button {
       width: 50%;
       padding: 1rem 0rem;
-      p {
-        color: #eeeeee;
-        font-size: 1.5rem;
-        width: 100%;
 
-        a {
-          text-decoration: none;
-          color: #19d3da;
+      .about-text {
+        max-height: 200px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
 
-          &:visited {
+        &.expanded {
+          max-height: 1000px;
+        }
+
+        p {
+          color: #eeeeee;
+          font-size: 1.5rem;
+          width: 100%;
+          margin-bottom: 1rem;
+          line-height: 1.6;
+
+          a {
+            text-decoration: none;
             color: #19d3da;
+            transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+            position: relative;
+
+            &:visited {
+              color: #19d3da;
+            }
+
+            &:hover {
+              color: #19d3da;
+              text-decoration: underline;
+              transform: scale(1.02);
+            }
           }
         }
       }
+
+      .read-more-btn {
+        cursor: pointer;
+        color: #19d3da;
+        background: transparent;
+        border: none;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+
+        &:hover {
+          color: #eeeeee;
+          transform: translateX(5px);
+        }
+      }
+
       .contact-btn {
         padding: 1rem 0rem;
         button {
@@ -46,10 +86,12 @@
           border: 2px solid #19d3da;
           background: transparent;
           font-size: 1rem;
+          transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
 
           &:hover {
-            background: hsl(182, 79%, 48%);
-            color: #373a40;
+            background: rgba(25, 211, 218, 0.1);
+            color: #19d3da;
+            transform: scale(1.05);
           }
         }
       }
@@ -65,18 +107,58 @@
 
   .skills {
     display: flex;
-    svg {
-      width: 7%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    margin-top: 2rem;
+
+    .skill-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+
+      svg {
+        width: 70px;
+        height: 70px;
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+
+      .skill-label {
+        font-size: 0.875rem;
+        color: #19d3da;
+        opacity: 0;
+        transform: translateY(-5px);
+        transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+        position: absolute;
+        bottom: -30px;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        svg {
+          transform: translateY(-5px) scale(1.1);
+          filter: drop-shadow(0 8px 12px rgba(25, 211, 218, 0.3));
+        }
+
+        .skill-label {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     }
   }
 
   hr {
-    width: 50%;
-    border: 2px solid #19d3da;
+    display: none;
   }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-container {
     width: 70%;
   }
@@ -87,9 +169,12 @@
 
     .text-and-button {
       width: 100% !important;
-      p {
-        padding-top: 10px;
-        font-size: 1rem !important;
+
+      .about-text {
+        p {
+          padding-top: 10px;
+          font-size: 1rem !important;
+        }
       }
     }
     img {
@@ -106,7 +191,19 @@
   }
 
   .skills {
-    display: none !important;
+    gap: 1.5rem !important;
+    padding: 1.5rem 0 0 0 !important;
+
+    .skill-icon {
+      svg {
+        width: 50px !important;
+        height: 50px !important;
+      }
+
+      .skill-label {
+        font-size: 0.75rem !important;
+      }
+    }
   }
   hr {
     display: none;

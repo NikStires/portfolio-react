@@ -20,6 +20,7 @@ const Projects = () => {
               image={project.image}
               text={project.text}
               technologies={project.technologies}
+              year={project.year}
               hasGithub={project.hasGithub}
               github={project.github}
               hasLink={project.hasLink}
@@ -35,6 +36,7 @@ const Projects = () => {
               image={project.image}
               text={project.text}
               technologies={project.technologies}
+              year={project.year}
               hasGithub={project.hasGithub}
               github={project.github}
               hasLink={project.hasLink}

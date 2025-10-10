@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-//icons
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrow, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import resume from './resume.pdf';
-//animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Nav = () => {
-  AOS.init();
-  //State
   const [dropDownStatus, setDropDownStatus] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <nav data-aos='fade-down' data-aos-easing='linear' data-aos-duration='1000'>

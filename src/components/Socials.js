@@ -1,10 +1,14 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Socials = () => {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div className='socials'>
@@ -19,7 +23,7 @@ const Socials = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <i className='fab fa-github'></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
@@ -31,7 +35,7 @@ const Socials = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <i className='far fa-envelope'></i>
+              <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </li>
           <li>
@@ -43,19 +47,7 @@ const Socials = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <i className='fab fa-linkedin-in'></i>
-            </a>
-          </li>
-          <li>
-            <a
-              data-aos='fade-right'
-              data-aos-duration='2100'
-              href='https://www.instagram.com/nikstires/'
-              title='Instagram'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <i className='fab fa-instagram'></i>
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
           </li>
         </ul>

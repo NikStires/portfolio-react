@@ -1,9 +1,7 @@
-import React from 'react';
-//icons
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-//animation
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -12,17 +10,23 @@ const ProjectRight = ({
   image,
   text,
   technologies,
+  year,
   hasGithub,
   github,
   hasLink,
   link,
 }) => {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div data-aos='fade-left' className='project-container'>
       <div className='project-info'>
-        <h1>{name}</h1>
+        <div className='project-header'>
+          <h1>{name}</h1>
+          {year && <span className='project-year'>{year}</span>}
+        </div>
         <p>
           {text}
           {hasGithub ? (
@@ -34,7 +38,10 @@ const ProjectRight = ({
           )}
           {hasLink ? (
             <a href={link} target='_blank' rel='noreferrer'>
-              <FontAwesomeIcon icon={faExternalLinkAlt} color='#19d3da' />
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                color='#19d3da'
+              />
             </a>
           ) : (
             ''

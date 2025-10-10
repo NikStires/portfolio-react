@@ -38,9 +38,11 @@ nav {
     height: 5vh;
     color: #eeeeee;
     background: #373a40;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
 
     &:hover {
       text-decoration: underline #19d3da;
+      transform: scale(1.05);
     }
 
     a {
@@ -57,10 +59,12 @@ nav {
     text-decoration: none;
     color: #19d3da;
     border: 2px solid #19d3da;
+    transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
 
     &:hover {
-      background: #19d3da;
-      color: #373a40;
+      background: rgba(25, 211, 218, 0.1);
+      color: #19d3da;
+      transform: scale(1.05);
     }
   }
 }
@@ -90,7 +94,7 @@ nav {
   }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .buttons {
     position: absolute;
     background-color: transparent;

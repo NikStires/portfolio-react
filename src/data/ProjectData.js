@@ -1,11 +1,9 @@
-//import Images
 import RecipeSearchEngine from '../img/project-img/recipe-search-engine.WebP';
 import StayStoked from '../img/project-img/stayStoked.WebP';
 import SmartPizza from '../img/project-img/smartpizza.WebP';
 import Waves from '../img/project-img/waves.WebP';
 import Capture from '../img/project-img/capture.WebP';
 import Climate from '../img/project-img/global-climate.WebP';
-//uuidv4
 import { v4 as uuidv4 } from 'uuid';
 
 function projectData() {
@@ -13,21 +11,21 @@ function projectData() {
     {
       name: 'Global Climate Advocacy',
       image: Climate,
-      text:
-        'An informational website about current climate conditions on Earth.',
+      text: 'An informational website about current climate conditions on Earth.',
       technologies: ['React', 'React Styled Components'],
+      year: '2021',
       hasGithub: true,
       github: 'https://github.com/NikStires/climate-advocacy-project',
-      hasLink: true,
-      link: 'https://global-climate.info/',
+      hasLink: false,
+      link: '',
       id: uuidv4(),
     },
     {
       name: 'Waves Music Player',
       image: Waves,
-      text:
-        'A lightweight, responsive and scalable lofi-hiphop streaming website.',
+      text: 'A lightweight, responsive and scalable lofi-hiphop streaming website.',
       technologies: ['React', 'Sass'],
+      year: '2020',
       hasGithub: true,
       github: 'https://github.com/NikStires/Waves',
       hasLink: false,
@@ -35,22 +33,11 @@ function projectData() {
       id: uuidv4(),
     },
     {
-      name: 'Smart Pizza menu website',
-      image: SmartPizza,
-      text:
-        'Website created for local business where I worked closely with the owner of the resturant to achieve a design and function that suited their needs.',
-      technologies: ['Html5', 'Sass', 'Javascript'],
-      hasGithub: false,
-      github: null,
-      hasLink: true,
-      link: 'https://www.smartpizzamenu.com/',
-      id: uuidv4(),
-    },
-    {
       name: 'Capture',
       image: Capture,
       text: 'A multipage fully animated mock cinematography portfolio website.',
       technologies: ['React Styled Components', 'Framer Motion'],
+      year: '2019',
       hasGithub: true,
       github: 'https://github.com/NikStires/capture',
       hasLink: false,
@@ -58,11 +45,23 @@ function projectData() {
       id: uuidv4(),
     },
     {
+      name: 'Smart Pizza menu website',
+      image: SmartPizza,
+      text: 'Website created for local business where I worked closely with the owner of the resturant to achieve a design and function that suited their needs.',
+      technologies: ['Html5', 'Sass', 'Javascript'],
+      year: '2018',
+      hasGithub: false,
+      github: null,
+      hasLink: false,
+      link: '',
+      id: uuidv4(),
+    },
+    {
       name: 'Stay Stoked',
       image: StayStoked,
-      text:
-        'Keep the fire burning to ward away evil spirits in this game jam submission for Ludem Dare 46, created in 48 hours.',
+      text: 'Keep the fire burning to ward away evil spirits in this game jam submission for Ludem Dare 46, created in 48 hours.',
       technologies: ['C#', 'Unity', 'Aesprite'],
+      year: '2018',
       hasGithub: true,
       github: 'https://github.com/NikStires/StayStoked',
       hasLink: false,
@@ -72,9 +71,9 @@ function projectData() {
     {
       name: 'Recipe Search Engine',
       image: RecipeSearchEngine,
-      text:
-        'Not sure to cook with what you have in your fridge? Look up an ingredient and see what you can make with it!',
+      text: 'Not sure to cook with what you have in your fridge? Look up an ingredient and see what you can make with it!',
       technologies: ['React', 'Edmame-API', 'Sass'],
+      year: '2017',
       hasGithub: true,
       github: 'https://github.com/NikStires/RecipeSearchEngine',
       hasLink: false,
